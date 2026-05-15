@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Kurdo Gift</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6C5CE7;
+            --primary-light: #A29BFE;
+            --bg: #F8F9FC;
+            --card: #FFFFFF;
+            --text: #2D3436;
+            --text-secondary: #636E72;
+            --border: #E8ECF1;
+            --accent-bg: #F0EEFF;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        .hero {
+            background: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 50%, #74B9FF 100%);
+            padding: 80px 20px 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 60%);
+        }
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 8px;
+            position: relative;
+        }
+        .hero .subtitle {
+            font-size: 18px;
+            color: rgba(255,255,255,0.85);
+            font-weight: 400;
+            position: relative;
+        }
+        .hero .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: #fff;
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 500;
+            margin-top: 16px;
+            position: relative;
+        }
+        .container {
+            max-width: 780px;
+            margin: -30px auto 60px;
+            padding: 0 20px;
+            position: relative;
+        }
+        .card {
+            background: var(--card);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+            padding: 48px;
+            margin-bottom: 20px;
+        }
+        .toc {
+            background: var(--accent-bg);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 36px;
+        }
+        .toc h3 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        .toc ol {
+            padding-left: 20px;
+        }
+        .toc li {
+            margin-bottom: 4px;
+        }
+        .toc a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .toc a:hover { color: var(--primary); }
+        .section {
+            margin-bottom: 36px;
+        }
+        .section:last-child { margin-bottom: 0; }
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--accent-bg);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text);
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 20px 0 8px;
+        }
+        p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 14px;
+        }
+        li {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+            position: relative;
+        }
+        ul li::marker {
+            color: var(--primary);
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #F0EEFF 0%, #E8F4FD 100%);
+            border-left: 4px solid var(--primary);
+            border-radius: 0 10px 10px 0;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+        .highlight-box p {
+            margin: 0;
+            font-weight: 500;
+            color: var(--text);
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 16px 0;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+        .data-table th {
+            background: var(--accent-bg);
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .data-table td {
+            padding: 12px 16px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border);
+        }
+        .data-table tr:hover td {
+            background: #FAFBFD;
+        }
+        .contact-card {
+            background: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 100%);
+            border-radius: 14px;
+            padding: 32px;
+            color: #fff;
+            text-align: center;
+        }
+        .contact-card h3 {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .contact-card p {
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 16px;
+        }
+        .contact-card a {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: #fff;
+            padding: 10px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+        .contact-card a:hover {
+            background: rgba(255,255,255,0.35);
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            color: #B2BEC3;
+        }
+        @media (max-width: 640px) {
+            .hero { padding: 60px 20px 50px; }
+            .hero h1 { font-size: 30px; }
+            .card { padding: 28px 22px; }
+            .data-table th, .data-table td { padding: 10px 12px; font-size: 13px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>Kurdo Gift</h1>
+    <p class="subtitle">Privacy Policy</p>
+    <span class="badge">Last Updated: May 15, 2026</span>
+</div>
+
+<div class="container">
+    <div class="card">
+
+        <div class="toc">
+            <h3>Table of Contents</h3>
+            <ol>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#data-collect">Information We Collect</a></li>
+                <li><a href="#data-use">How We Use Your Information</a></li>
+                <li><a href="#data-storage">Data Storage & Security</a></li>
+                <li><a href="#third-party">Third-Party Services</a></li>
+                <li><a href="#data-sharing">Data Sharing & Disclosure</a></li>
+                <li><a href="#notifications">Push Notifications</a></li>
+                <li><a href="#rights">Your Rights</a></li>
+                <li><a href="#children">Children's Privacy</a></li>
+                <li><a href="#changes">Changes to This Policy</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ol>
+        </div>
+
+        <!-- 1. Introduction -->
+        <div class="section" id="intro">
+            <div class="section-header">
+                <div class="section-icon">📋</div>
+                <h2>1. Introduction</h2>
+            </div>
+            <p>Welcome to <strong>Kurdo Gift</strong> ("we", "our", or "us"). This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you use our mobile application ("App"). By using the App, you agree to the collection and use of information in accordance with this policy.</p>
+            <p>We are committed to protecting your privacy and ensuring transparency about how your data is handled.</p>
+        </div>
+
+        <!-- 2. Information We Collect -->
+        <div class="section" id="data-collect">
+            <div class="section-header">
+                <div class="section-icon">📊</div>
+                <h2>2. Information We Collect</h2>
+            </div>
+
+            <h3>2.1 Personal Information</h3>
+            <p>When you create an account, we may collect the following:</p>
+            <table class="data-table">
+                <tr>
+                    <th>Data Type</th>
+                    <th>Purpose</th>
+                    <th>Required</th>
+                </tr>
+                <tr>
+                    <td>Full Name</td>
+                    <td>Account identification & display</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Email Address</td>
+                    <td>Account login & communication</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>Account verification</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Profile Photo</td>
+                    <td>Personalization</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>Account security</td>
+                    <td>Yes</td>
+                </tr>
+            </table>
+
+            <h3>2.2 Transaction Data</h3>
+            <p>We collect data related to your transactions within the App, including:</p>
+            <ul>
+                <li>Purchase history and order details</li>
+                <li>Account balance and points</li>
+                <li>Raffle and spin wheel participation records</li>
+                <li>Deposit and withdrawal requests</li>
+            </ul>
+
+            <h3>2.3 Device & Technical Data</h3>
+            <ul>
+                <li>Firebase Cloud Messaging (FCM) token for push notifications</li>
+                <li>Device type and operating system version</li>
+                <li>App version</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p>We do NOT collect location data, contacts, call logs, SMS messages, or any biometric data.</p>
+            </div>
+        </div>
+
+        <!-- 3. How We Use Your Information -->
+        <div class="section" id="data-use">
+            <div class="section-header">
+                <div class="section-icon">⚙️</div>
+                <h2>3. How We Use Your Information</h2>
+            </div>
+            <p>We use the information we collect for the following purposes:</p>
+            <ul>
+                <li><strong>Account Management:</strong> To create, maintain, and secure your account</li>
+                <li><strong>Service Delivery:</strong> To process purchases, manage balances, and deliver digital gift cards</li>
+                <li><strong>Rewards & Promotions:</strong> To operate raffles, spin wheels, and points-based rewards</li>
+                <li><strong>Notifications:</strong> To send important updates about your account, prizes, and new features</li>
+                <li><strong>Customer Support:</strong> To respond to your inquiries and resolve issues</li>
+                <li><strong>App Improvement:</strong> To improve the functionality and user experience of the App</li>
+            </ul>
+            <div class="highlight-box">
+                <p>We do NOT use your data for targeted advertising, profiling, or selling to advertisers.</p>
+            </div>
+        </div>
+
+        <!-- 4. Data Storage & Security -->
+        <div class="section" id="data-storage">
+            <div class="section-header">
+                <div class="section-icon">🔒</div>
+                <h2>4. Data Storage & Security</h2>
+            </div>
+            <p>We implement industry-standard security measures to protect your data:</p>
+            <ul>
+                <li><strong>Encryption in Transit:</strong> All communication between the App and our servers is encrypted using HTTPS/TLS (SSL certificates)</li>
+                <li><strong>Password Security:</strong> Passwords are hashed and never stored in plain text</li>
+                <li><strong>PIN Protection:</strong> App lock PINs are encrypted using SHA-256 hashing</li>
+                <li><strong>Secure Token Storage:</strong> Authentication tokens are stored in encrypted secure storage on your device</li>
+                <li><strong>Cleartext Prevention:</strong> The App blocks all non-HTTPS (cleartext) network traffic</li>
+                <li><strong>Server Security:</strong> Our servers are hosted on secure infrastructure with firewall protection</li>
+            </ul>
+            <p>While we strive to use commercially acceptable means to protect your personal information, no method of electronic transmission or storage is 100% secure. We cannot guarantee absolute security.</p>
+        </div>
+
+        <!-- 5. Third-Party Services -->
+        <div class="section" id="third-party">
+            <div class="section-header">
+                <div class="section-icon">🔗</div>
+                <h2>5. Third-Party Services</h2>
+            </div>
+            <p>Our App integrates the following third-party services:</p>
+            <table class="data-table">
+                <tr>
+                    <th>Service</th>
+                    <th>Provider</th>
+                    <th>Purpose</th>
+                </tr>
+                <tr>
+                    <td>Firebase Cloud Messaging</td>
+                    <td>Google LLC</td>
+                    <td>Push notifications delivery</td>
+                </tr>
+                <tr>
+                    <td>Google Sign-In</td>
+                    <td>Google LLC</td>
+                    <td>Optional social login</td>
+                </tr>
+            </table>
+            <p>These third-party services have their own privacy policies. We encourage you to review them:</p>
+            <ul>
+                <li><a href="https://policies.google.com/privacy" style="color: var(--primary);">Google Privacy Policy</a></li>
+                <li><a href="https://firebase.google.com/support/privacy" style="color: var(--primary);">Firebase Privacy & Security</a></li>
+            </ul>
+        </div>
+
+        <!-- 6. Data Sharing -->
+        <div class="section" id="data-sharing">
+            <div class="section-header">
+                <div class="section-icon">🤝</div>
+                <h2>6. Data Sharing & Disclosure</h2>
+            </div>
+            <div class="highlight-box">
+                <p>We do NOT sell, trade, or rent your personal information to third parties.</p>
+            </div>
+            <p>We may disclose your information only in the following circumstances:</p>
+            <ul>
+                <li><strong>Legal Obligations:</strong> When required by law, court order, or governmental regulation</li>
+                <li><strong>Safety:</strong> To protect the rights, property, or safety of our users or others</li>
+                <li><strong>Consent:</strong> With your explicit consent for a specific purpose</li>
+            </ul>
+        </div>
+
+        <!-- 7. Notifications -->
+        <div class="section" id="notifications">
+            <div class="section-header">
+                <div class="section-icon">🔔</div>
+                <h2>7. Push Notifications</h2>
+            </div>
+            <p>We send push notifications for:</p>
+            <ul>
+                <li>New raffles and spin wheel events</li>
+                <li>Balance deposit request approvals or rejections</li>
+                <li>Prize winning announcements</li>
+            </ul>
+            <p>You can disable push notifications at any time through your device's system settings. Disabling notifications will not affect the core functionality of the App.</p>
+        </div>
+
+        <!-- 8. Your Rights -->
+        <div class="section" id="rights">
+            <div class="section-header">
+                <div class="section-icon">✅</div>
+                <h2>8. Your Rights</h2>
+            </div>
+            <p>You have the following rights regarding your personal data:</p>
+            <ul>
+                <li><strong>Access:</strong> You can view your personal information within the App at any time</li>
+                <li><strong>Correction:</strong> You can update or correct your personal data through your profile settings</li>
+                <li><strong>Deletion:</strong> You can request deletion of your account and associated data by contacting us</li>
+                <li><strong>Data Portability:</strong> You can request a copy of your data in a structured format</li>
+                <li><strong>Withdraw Consent:</strong> You can withdraw consent for optional data processing at any time</li>
+            </ul>
+            <p>To exercise any of these rights, please contact us using the information provided below.</p>
+        </div>
+
+        <!-- 9. Children -->
+        <div class="section" id="children">
+            <div class="section-header">
+                <div class="section-icon">👶</div>
+                <h2>9. Children's Privacy</h2>
+            </div>
+            <p>Our App is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13. If we discover that a child under 13 has provided us with personal data, we will delete it immediately. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.</p>
+        </div>
+
+        <!-- 10. Changes -->
+        <div class="section" id="changes">
+            <div class="section-header">
+                <div class="section-icon">📝</div>
+                <h2>10. Changes to This Policy</h2>
+            </div>
+            <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this Privacy Policy periodically for any changes. Your continued use of the App after changes are posted constitutes your acceptance of the revised policy.</p>
+        </div>
+
+        <!-- 11. Contact -->
+        <div class="section" id="contact">
+            <div class="section-header">
+                <div class="section-icon">📧</div>
+                <h2>11. Contact Us</h2>
+            </div>
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>Get in Touch</h3>
+            <p>We're here to help with any privacy-related questions.</p>
+            <a href="mailto:sodokurd10@gmail.com">sodokurd10@gmail.com</a>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">
+    &copy; 2026 Kurdo Gift. All rights reserved.
+</div>
+
+</body>
+</html>
